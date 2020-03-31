@@ -53,6 +53,7 @@ if __name__ == '__main__':
 			sys.path.append("./python/")
 			import pythonFunc
 			t1 = timeit.default_timer()
+			print(pythonFunc.MonteCarloPi(1000000))
 			result  = pythonFunc.Floyd_Warshall_Algorithm(E)
 			t2 = timeit.default_timer()
 			print("{} ms".format(1000*(t2-t1)))
@@ -92,6 +93,7 @@ if __name__ == '__main__':
 			sys.path.append("./cython/")
 			import pythonFunc
 			t1 = timeit.default_timer()
+			print(pythonFunc.MonteCarloPi(1000000))
 			result  = pythonFunc.Floyd_Warshall_Algorithm(E)
 			t2 = timeit.default_timer()
 			print("{} ms".format(1000*(t2-t1)))
