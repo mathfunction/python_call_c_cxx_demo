@@ -1,28 +1,3 @@
-"""===============================================================================================================================================================
-	
-	這是關於 Python 使用 C/C++ 加速系列:
-
-		
-		- compiler 預設 :
-			Linux :  
-				GNU gcc/g++ - https://gcc.gnu.org/
-
-			Max(Darwin) : 
-				clang/clang++ - https://clang.llvm.org/
-			Windows :  
-				[cython]  MSYS2 gcc.exe (anaconda default) - https://www.msys2.org/
-				[ctypes]  MSVC : cl.exe - https://docs.microsoft.com/zh-tw/cpp/build/reference/compiler-options?view=vs-2019
-	
-		- commands 部分實作，需自行連結函式庫 !! 
-		
-
-
-		- flag options 說明連結 
-
-
-
-
-============================================================================================================================================================="""
 import os 
 import platform
 import shutil
@@ -251,7 +226,6 @@ def ctypes_cpp2o(cppfile):
 			"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk",
 			"-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include", 
 			"-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers",
-			"-I.",
 			"-I/usr/local/include",
 			"-I/usr/local/opt/openssl/include", 
 			"-I/usr/local/opt/sqlite/include",
