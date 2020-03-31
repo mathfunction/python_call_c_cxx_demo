@@ -347,12 +347,6 @@ class ComplieDIY:
 
 
 
-
-
-
-
-
-
 	
 	
 

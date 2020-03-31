@@ -1,3 +1,4 @@
+
 def MonteCarloPiOpt(n=10000000):
 	count = 0
 	Xseed0 = 2019
