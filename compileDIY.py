@@ -296,8 +296,8 @@ def ctypes_o2so(ofile):
 def ctypes_compile(cppfile):
 	# 啟動 msvc x86_64  
 	if PLATFORM_NAME == "Windows":
-		os.system("C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\x86_amd64\\vcvarsx86_amd64.bat")
-		dllfile = "{}.dll".split(cppfile.split(".cpp"))[0]
+		os.system('\"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\x86_amd64\\vcvarsx86_amd64.bat\"')
+		dllfile = "{}.dll".format(cppfile.split(".cpp")[0])
 		commands = [
 			"cl",
 			"/std:c++14", 
@@ -306,11 +306,10 @@ def ctypes_compile(cppfile):
 			"/O2",
 			cppfile,
 			#"/I",
-			#/link,
+			"/link",
 			#/libpath:,
-			#/DLL,
-			"/OUT:",
-			dllfile
+			"/DLL",
+			"/OUT:{}".format(dllfile)
 		]
 		os.system(" ".join(commands))
 		print("[ctypes_compile] {} --> {} ".format(cppfile,dllfile))

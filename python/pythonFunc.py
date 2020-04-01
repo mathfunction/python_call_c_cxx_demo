@@ -8,6 +8,10 @@ import numpy as np
 
 
 
+
+
+
+
 def Floyd_Warshall_Algorithm(E):
 	_max = float("inf")
 	_idV = {}
@@ -40,7 +44,7 @@ def Floyd_Warshall_Algorithm(E):
 				if A[i,j] > A[i,k] + A[k,j]:
 					A[i,j] = A[i,k] + A[k,j]
 
-	return A , _idV , _invIdV
+	return A
 
 
 
