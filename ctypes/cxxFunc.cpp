@@ -97,7 +97,7 @@ void Floyd_Warshall_Algorithm(char**keys,double *vals,int size){
 	for(int i=0;i<V;i++){
 		delete [] A[i];
 	}
-	delete A;
+	delete [] A;
 	
 
 }//end_Floyd_Warshall_Algorithm

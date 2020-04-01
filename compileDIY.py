@@ -208,7 +208,7 @@ def ctypes_cpp2o(cppfile):
 		]
 		os.system(" ".join(commands))
 		return ofile
-	elif PlatformsName == "Darwin":
+	elif PLATFORM_NAME == "Darwin":
 		ofile = "{}.o".format(cppfile.split(".cpp")[0])
 		commands = [
 			"clang",
