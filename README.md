@@ -76,7 +76,7 @@
     ```python
     def ctypes_cpp2o(cppfile) # 把 ./XXX.cpp 編譯成 ./XXX.o
     def ctypes_o2so(ofile)    # 把 ./XXX.o 編譯成 ./XXX.so (註: Linux , Darwin 限定)
-    def ctypes_compile(cppfile) # 以上函式 ./XXX.cpp ---> ./XXX.so 
+    def ctypes_compile(cppfile) # 串聯以上函式 ./XXX.cpp ---> ./XXX.so , ./XXX.dll
     ```
 
 
