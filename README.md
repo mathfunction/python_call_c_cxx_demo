@@ -76,7 +76,7 @@
     ```python
     def ctypes_cpp2o(cppfile) # 把 ./XXX.cpp 編譯成 ./XXX.o
     def ctypes_o2so(ofile)    # 把 ./XXX.o 編譯成 ./XXX.so (註: Linux , Darwin 限定)
-    def ctypes_compile(cppfile) # ./XXX.cpp ---> ./XXX.cpp 
+    def ctypes_compile(cppfile) # 以上函式 ./XXX.cpp ---> ./XXX.so 
     ```
 
 
@@ -120,15 +120,14 @@ python3 main.py --run-ctypes
 
   
 
-##### 編譯器 command line option 其他參考:
+##### 編譯器 command line option / ctypes 其他參考:
 
 - GNU gcc  <https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html#Invoking-GCC>
-
 - clang <https://clang.llvm.org/docs/ClangCommandLineReference.html#diagnostic-flags> 
-
 - MSVC <https://github.com/MicrosoftDocs/cpp-docs/blob/master/docs/build/reference/compiler-options.md>
 
-
+- ctypes https://docs.python.org/3/library/ctypes.html
+- c-cpps Notes https://caiorss.github.io/C-Cpp-Notes/
 
 
 
