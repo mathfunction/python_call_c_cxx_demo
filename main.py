@@ -96,7 +96,7 @@ if __name__ == '__main__':
 			import pythonFunc
 			t1 = timeit.default_timer()
 			print(pythonFunc.Floyd_Warshall_Algorithm(E))
-			#print(pythonFunc.MonteCarloPi(10000000))
+			print(pythonFunc.MonteCarloPi(10000000))
 			t2 = timeit.default_timer()
 			print("{} ms".format(1000*(t2-t1)))
 			
@@ -106,7 +106,7 @@ if __name__ == '__main__':
 			import pythonFunc
 			t1 = timeit.default_timer()
 			print(pythonFunc.Floyd_Warshall_Algorithm(E))
-			#print(pythonFunc.MonteCarloPi(10000000))
+			print(pythonFunc.MonteCarloPi(10000000))
 			t2 = timeit.default_timer()
 			
 			
@@ -132,7 +132,7 @@ if __name__ == '__main__':
 			p_vals = (ctypes.c_double*len(vals))(*vals)
 			# 這邊不回傳 !! 
 			cxxFunc.cFWA(p_keys,p_vals,len(vals))
-			#print(cxxFunc.cMonteCarloPi(10000000))
+			print(cxxFunc.cMonteCarloPi(10000000))
 			t2 = timeit.default_timer()
 			
 			print("{} ms".format(1000*(t2-t1)))
