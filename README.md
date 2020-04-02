@@ -1,8 +1,8 @@
 ## Python_Call_C/C++_Demo
 
-這是關於 Python 使用 C/C++ 加速，如何在各作業系統 "手動編譯" 範例
+這是關於 Python 使用 C/C++ 加速，如何在各作業系統自動化 "手動編譯指令" 範例
 
-主要是使用 os.system() 呼叫 command line 編譯器指令(ex: gcc , cl ... ) !!
+主要是使用 platform.system() 偵測作業系統， os.system() 呼叫 command line 編譯器指令(ex: gcc , cl ... ) !!
 
 **詳細實作詳見 compileDIY.py !!!**
 
@@ -45,7 +45,7 @@
   | 作業系統    | c/c++ 編譯器                             |
   | ----------- | ---------------------------------------- |
   | Linux       | [GNU gcc/g++](https://gcc.gnu.org/)      |
-  | Max(Darwin) | [clang/clang++](https://clang.llvm.org/) |
+  | Mac(Darwin) | [clang/clang++](https://clang.llvm.org/) |
   | Windows     | [MSYS2 gcc/g++](https://www.msys2.org/)  |
 
   - 函式說明 : 
